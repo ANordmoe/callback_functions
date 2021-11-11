@@ -1,3 +1,75 @@
-.input-group{
-    margin-top: 30px;
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+* {
+    background: rgb(12, 187, 187);
+}
+
+.input-group {
+    margin-top: 50px;
+}
+
+.input-group input {
+    font-size: 30px;
+}
+
+.input-group-text {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-family: 'Irish Grover', cursive;
+    font-size: 30px;
+}
+
+button {
+    font-family: 'Irish Grover', cursive;
+    font-size: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nameDisplay {
+    color: white;
+    font-family: 'Irish Grover', cursive;
+    font-size: 60px;
+}
+
+#greeting {
+    margin-top: 40px;
+    color: white;
+    font-family: 'Irish Grover', cursive;
+    font-size: 60px;
+}
+
+#road {
+    border-bottom: 7px dashed black;
+}
+
+#runner {
+    margin-top: 20px;
+    background: url(/assets/images/panda.png);
+    width: 250px;
+    height: 330px;
+    animation: walk 1s steps(12) infinite, forward 5s linear infinite;
+}
+
+@keyframes walk {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: 3000px;
+    }
+}
+
+@keyframes forward {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(1200px);
+    }
 }

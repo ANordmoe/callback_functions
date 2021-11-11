@@ -19,6 +19,6 @@ async function addName() {
 
 function onSubmit() {
   // let submit = document.getElementById("inputId").value;
-  document.querySelector("#greeting").innerHTML = "top of the mornin... ";
+  document.querySelector("#greeting").innerHTML = "Top O' the Morning... ";
   addName();
 }
