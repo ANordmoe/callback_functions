@@ -1,15 +1,26 @@
-function myDisplayer(some) {
+function myDisplayer(some, opt) {
     document.getElementById("greeting").innerHTML = some;
+
+    if (opt == "greet") {
+      document.getElementById("greeting").innerHTML = "Hello " + some;
   }
+    if (opt == "goodbye") {
+      document.getElementById("greeting").innerHTML = "Goodbye " + some;
+  }
+    if (opt == "welcome") {
+      document.getElementById("greeting").innerHTML = "Welcome " + some;
+  }
+}
   
-  let name = document.getElementById("inputId").value; 
 
   function onSubmit() {
     let submit = document.getElementById("inputId").value;
+    let option = document.getElementById("option").value;
+    document.querySelector('h1').innerHTML = "Getting your Response";
 
-    document.querySelector("h1").innerHTML = submit;
-
+    setTimeout(() => {
+    myDisplayer(submit, option);
+  }, 1000);
   }
 
-  
   
